@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
+    padding:0;
+    margin:0;
+    max-width:100%;
+}
+
+html{
+  font-size:62.5%;
+}
+
+
+/* *{
+  border: 1px solid pink;
+} */
+.top-img{
+  margin-top:1%;
+  margin-bottom:1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100vw;
+  height:25vh;
+  overflow:hidden;
+  border: 3px solid lightgray;
+}
+.top-img img{
+}
+.pizza-form-container{
+  margin-left:1%;
+  margin-right:1%;
+  border: 3px solid lightgray;
+  display:flex;
+  flex-direction:column;
+
+}
+.pizza-form-container h1{
+  text-shadow:1px 1px yellow;
+  background-color: rgba(236,57,68,255);
+  padding:.75%;
+  font-size:4rem;
+  width:40%;
+  border: 3px solid lightgray;
+}
+.pizza-form-container h2{
+  font-size: 2.5rem;
+  padding:.25%;
+  display:flex;
+  background-color: rgba(236,57,68,255);
+  width:25%;
+  border:1px solid black;
+  justify-content: center;
+  break-after: always;
+  margin-top:1%;
+  margin-bottom:1%;
+}
+.pizza-form-container label{
+  border:1px solid grey;
+  font-size:2rem;
+  display:flex;
+  flex-direction: row;
+  width:25%;
+  justify-content: space-between;
+  padding:.25%;
+}
+.pizza-complete-container{
+  display:flex;
+  flex-direction:row;
+
+  justify-content:space-between;
+  width:85%;
+}
+.counter{
+  display:flex;
+  flex-direction: row;
+  font-size: 2.25rem;;
+  border:1px solid black;
+  width:10%;
+  justify-content: space-between;
+  padding-left: 10px;;
+  padding-right: 1px;;
+  padding-top:5px;
+  padding-bottom:5px;
+  height:5vh;
+}
+.counter-buttons{
+  display:flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+.counter button{
+  width:15px;
+  height:15px;
+  transform: rotate(90deg);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-button button{
+  width:65vw;
+  height:5vh;
+}
+
+.pizza-instructions-container label{
+  width:75vw;
+  
+}
+#name-text{
+  width:100%;
+  justify-content: left;
+}
+#special-text{
+  width:100%;
+  justify-content: left;
+  size:1000px;
+}
+
+
+
+/* MAIN PAGE CSS */
+
+header h1{
+  font-size:5rem;
+  color:rgba(236,57,68,255);
+  text-shadow:1px 1px black;
+}
+header button{
+  font-size: 2.5rem;
+  display:flex;
+  border:1px solid grey;
+  margin:1px;
+  
+  background-color:rgb(245, 212, 212);
+  justify-content:center;
+  padding:5px;
+}
+header button:hover{
+  background-color:rgba(236,57,68,255);
+}
+
+
+header{
+  
+  display:flex;
+  
+}
+
+nav{
+  border:1px solid black;
+  width:50%;
+  background-color: salmon;
+  display:flex;
+  justify-content: center;
+
+}
+nav button{
+
+  width:30%;
+  align-items: center;
+  
+}
+.header-text{
+  display:flex;
+  align-items: center;
+  border:1px solid black;
+  width:50%;
+  justify-content:center;
+  background-color: salmon;
+}
+
+.errors{
+  width:fit-content;
+  padding:2.5px;
+  display:flex;
+  color:red;
+  font-size:2rem;
+  background-color:black;
+}
+
